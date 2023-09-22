@@ -1,6 +1,6 @@
 package Models;
 
-import java.util.List;
+import Principal.Automoveis;
 
 public class Caminhao extends Automoveis {
     public Caminhao(){

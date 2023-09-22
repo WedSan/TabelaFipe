@@ -1,5 +1,6 @@
-package Models;
+package Principal;
 
+import Models.*;
 import Services.PegarDados;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -40,6 +41,7 @@ public abstract class Automoveis implements IAutomoveis {
 
         List<Dados> dados = pegarDados.automoveis(tipoAutomovel, opcaoMarca, opcaoModelo);
         System.out.println("---ANOS---");
+
         dados.forEach(e->{
             System.out.println("Ano: "+ e.nome());
             System.out.println("Codigo:"+ e.codigo());
