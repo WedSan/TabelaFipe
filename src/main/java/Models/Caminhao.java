@@ -1,10 +1,11 @@
 package Models;
 
-import Principal.Automoveis;
+import Services.TabelaFipe;
 
-public class Caminhao extends Automoveis {
+public class Caminhao{
     public Caminhao(){
-        mostrarTabela(EAutomoveis.CAMINHAO);
+       TabelaFipe tabelaFipe =  new TabelaFipe();
+       tabelaFipe.mostrarTabela(EAutomoveis.CAMINHAO);
     }
 
 

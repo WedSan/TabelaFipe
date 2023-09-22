@@ -1,17 +1,16 @@
-package Principal;
+package Services;
 
 import Models.*;
-import Services.PegarDados;
-import com.fasterxml.jackson.databind.ObjectMapper;
 
-import java.time.Year;
 import java.util.List;
 import java.util.Scanner;
 
-public abstract class Automoveis implements IAutomoveis {
+public class TabelaFipe implements IAutomoveis {
 
     protected PegarDados pegarDados = new PegarDados();
     protected Scanner ler = new Scanner(System.in);
+
+
 
     @Override
     public void mostrarTabela(EAutomoveis tipoAutomovel) {

@@ -1,9 +1,10 @@
 package Models;
 
-import Principal.Automoveis;
+import Services.TabelaFipe;
 
-public class Moto extends Automoveis implements IAutomoveis {
+public class Moto {
     public Moto() {
-        mostrarTabela(EAutomoveis.MOTO);
+        TabelaFipe tabelaFipe = new TabelaFipe();
+        tabelaFipe.mostrarTabela(EAutomoveis.MOTO);
     }
 }
